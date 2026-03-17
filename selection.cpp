@@ -5,7 +5,7 @@
 #include<iostream>
 using namespace std;
 void selectionsort(int arr[],int n){
-    for (int i = 0; i < n-1; i++)
+    for (int i = 0; i < n-1; i++) // here one part is treated as sorted and the other part is treated as unsorted and from the unsorted one minimum element is selected and then they are swapped
     { int mini=i;
        for (int j = i+1; j <=n-1; j++)
        {
@@ -16,7 +16,7 @@ void selectionsort(int arr[],int n){
 
         }
       }
-       int temp=arr[mini];
+       int temp=arr[mini];// outside the loop because first we want the minimum ekement and after getting the minimum ekement one final swapping is done after iterating the whole array
        arr[mini]=arr[i];
        arr[i]=temp;
        
