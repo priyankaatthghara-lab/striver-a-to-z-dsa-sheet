@@ -13,13 +13,13 @@ int bubblesort(int *ptr,int n){// when array is passed in function then it is pa
            ptr[j+1]=temp;
            isswapped=1;
            }
-          if (isswapped=0)// if it will be equal to 0 then array is arranged in the ascending order and there would not be any need to check further
+          if (isswapped==0)// if it will be equal to 0 then array is arranged in the ascending order and there would not be any need to check further
           {
             break;
           }
            
         }
-        
+      return 0;  
     }
     for (int  i = 0; i < n; i++)
     {
